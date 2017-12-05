@@ -99,6 +99,17 @@ namespace TreesAlgo
             Console.WriteLine(tree.Data);
             InOrderTraversal(tree);
         }
+
+        public void InOrderTraversalWithoutRecursion(Tree tree)
+        {
+            if (tree != null)
+            {
+                Console.WriteLine(tree.Next.Data);
+                Console.WriteLine(tree.Data);
+                Console.WriteLine(tree.Right.Data);
+
+            }
+        }
     }
 
     
